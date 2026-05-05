@@ -18,7 +18,6 @@ public:
 int main() {
     buku bukunya;
 
-    // Cara biasa (dikomentari di gambar):
     // bukunya.setJudul("Matematika");
     // cout << bukunya.getJudul();
 
