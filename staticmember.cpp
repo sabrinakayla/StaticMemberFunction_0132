@@ -15,7 +15,7 @@ public:
     }
 };
 
-int mahasiswa::nim = 10;
+int mahasiswa::nim = 0;
 
 void mahasiswa::setID(){
     id = ++nim;
@@ -30,10 +30,10 @@ void mahasiswa::printAll(){
 
 int main (){
 
-    mahasiswa mhs1("lia honda");
-    mahasiswa mhs2("fawas itb");
-    mahasiswa mhs3("andi puyuh");
-    mahasiswa mhs4("slamet kopling");
+    mahasiswa mhs1("lia kurnia");
+    mahasiswa mhs2("asroni");
+    mahasiswa mhs3("andi kurniawan");
+    mahasiswa mhs4("joko purbo");
 
     mhs1.printAll();
     mhs2.printAll();
