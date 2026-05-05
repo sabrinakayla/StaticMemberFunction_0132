@@ -1,0 +1,55 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Kendaraan {
+private:
+    int id_kendaraan;
+    string nama_kendaraan;
+
+public:
+    Kendaraan();
+    Kendaraan(int id);
+    Kendaraan(string nama);
+    Kendaraan(int id, string nama);
+    void tampilkanInfo();
+};
+
+Kendaraan::Kendaraan() {
+    id_kendaraan = 0;
+    nama_kendaraan = "Default";
+}
+
+Kendaraan::Kendaraan(int id) {
+    id_kendaraan = id;
+    nama_kendaraan = "Tanpa Nama";
+}
+
+Kendaraan::Kendaraan(string nama) {
+    id_kendaraan = 0;
+    nama_kendaraan = nama;
+}
+
+Kendaraan::Kendaraan(int id, string nama) {
+    id_kendaraan = id;
+    nama_kendaraan = nama;
+}
+
+void Kendaraan::tampilkanInfo() {
+    cout << "ID Kendaraan: " << id_kendaraan << " | Nama: " << nama_kendaraan << endl;
+}
+
+int main() {
+    Kendaraan k1;
+    Kendaraan k2(101);
+    Kendaraan k3("Motor");
+    Kendaraan k4(202, "Mobil");
+
+    k1.tampilkanInfo();
+    k2.tampilkanInfo();
+    k3.tampilkanInfo();
+    k4.tampilkanInfo();
+
+    return 0;
+}
