@@ -20,7 +20,6 @@ Mahasiswa::Mahasiswa(int inim) {
     nim = inim;
 }
 
-
 Mahasiswa::Mahasiswa(string inama) {
     nama = inama;
 }
@@ -36,19 +35,14 @@ void Mahasiswa::cetak() {
 }
 
 int main() {
-    Mahasiswa mhs1(5);
-    Mahasiswa mhs2("Haidar");
-    Mahasiswa mhs3(23, "Haidar");
+    Mahasiswa mhs1(102030);
+    Mahasiswa mhs2("Andi");
+    Mahasiswa mhs3(010203, "Santi");
 
-    cout << "============================" << endl;
-    cout << "Mahasiswa 1 : ";  cout << endl;
-    mhs1.cetak(); cout << endl;
-    cout << "Mahasiswa 2 : ";  cout << endl;
-    mhs2.cetak(); cout << endl;
-    cout << "Mahasiswa 3 : ";  cout << endl;
-    mhs3.cetak();
-    cout << "============================" << endl;
-
+    //tampilkan nilai
+    cout << "Mahasiswa 1: "; mhs1.cetak();
+    cout << "Mahasiswa 2: "; mhs2.cetak();
+    cout << "Mahasiswa 3: "; mhs3.cetak();
 
     return 0;
 }
